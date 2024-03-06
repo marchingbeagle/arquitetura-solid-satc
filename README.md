@@ -1,0 +1,1 @@
+# arquitetura-solid-satc
