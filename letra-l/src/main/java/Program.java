@@ -1,11 +1,18 @@
 public class Program {
     public static void main(String[]args){
-        Estudante estudante1 = new Estudante("Erik");
-        estudante1.estudar();
+        Estudante estudanteGenerico = new Estudante("Erik");
+        estudanteGenerico.estudar();
 
-        EstudanteDePosGraduacao estudanteGraduacao = new EstudanteDePosGraduacao("erik");
-        String nome = estudanteGraduacao.getNome();
-        System.out.println(nome);
-        estudanteGraduacao.estudar();
+        EstudanteDePosGraduacao estudantePosGraduacao = new EstudanteDePosGraduacao("Erik Pós Graduação");
+        EstudanteDeGraduação estudanteDeGraduacao = new EstudanteDeGraduação("Erik Graduação");
+
+        estudantePosGraduacao.estudar();
+        estudanteDeGraduacao.estudar();
+
+        estudanteDeGraduacao.entregarTCC();
+        estudantePosGraduacao.entregarTCC();
+
+
+
     }
 }
